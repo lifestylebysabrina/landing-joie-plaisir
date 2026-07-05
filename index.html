@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>11 clés pour ramener la joie et le plaisir dans ton quotidien | Lifestyle by Sabrina</title>
+<meta name="description" content="Reçois gratuitement ton guide : 11 clés simples et concrètes pour remettre la joie et le plaisir au cœur de ton quotidien.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF7EF;
+    --paper:#FFFFFF;
+    --ink:#2B1D12;
+    --body:#5B4B3D;
+    --body-soft:#7A6B5A;
+    --gold:#B4872C;
+    --gold-deep:#8F6B22;
+    --gold-light:#E8D5A8;
+    --blush:#F4ECDC;
+    --line:#E3D6BB;
+    --shadow: 0 20px 60px -25px rgba(43,29,18,0.35);
+    --maxw: 1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--body);
+    font-family:'Jost', sans-serif;
+    font-weight:400;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{
+    font-family:'Playfair Display', serif;
+    color:var(--ink);
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  p{margin:0;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+  img{max-width:100%; display:block;}
+  a{color:inherit;}
+
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.is-visible{opacity:1; transform:translateY(0);}
+
+  :focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(251,247,239,0.88);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; padding:18px 28px; max-width:var(--maxw); margin:0 auto;}
+  .logo{font-family:'Playfair Display', serif; font-size:22px; font-weight:600; color:var(--ink); letter-spacing:0.04em;}
+  .logo em{font-style:normal; color:var(--gold);}
+  .nav-cta{
+    font-family:'Jost', sans-serif; font-size:14px; font-weight:500;
+    color:var(--ink); border:1px solid var(--gold); padding:10px 20px;
+    border-radius:999px; text-decoration:none; letter-spacing:0.03em;
+    transition:background .25s ease, color .25s ease;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--gold); color:#fff;}
+
+  .rings{position:absolute; inset:0; overflow:hidden; pointer-events:none;}
+  .rings svg{position:absolute;}
+
+  .hero{position:relative; overflow:hidden; padding:64px 0 90px;}
+  .hero-grid{
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;
+    position:relative; z-index:2;
+  }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:13px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--gold-deep); font-weight:500; margin-bottom:22px;
+  }
+  .eyebrow::before{content:''; width:26px; height:1px; background:var(--gold);}
+  .hero h1{font-size:clamp(34px, 4.4vw, 54px); line-height:1.12; font-weight:600;}
+  .hero h1 .accent{color:var(--gold); font-style:italic; font-weight:500;}
+  .hero-sub{font-size:18px; color:var(--body); margin-top:22px; max-width:480px;}
+  .hero-actions{margin-top:34px; display:flex; align-items:center; gap:18px; flex-wrap:wrap;}
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    background:var(--ink); color:#fff; font-family:'Jost',sans-serif; font-weight:500;
+    font-size:15px; letter-spacing:0.03em; padding:16px 32px; border-radius:999px;
+    text-decoration:none; border:1px solid var(--ink); cursor:pointer;
+    transition:transform .25s ease, background .25s ease, box-shadow .25s ease;
+  }
+  .btn:hover{background:var(--gold-deep); border-color:var(--gold-deep); transform:translateY(-2px); box-shadow:var(--shadow);}
+  .microtrust{font-size:13px; color:var(--body-soft);}
+
+  .hero-visual{position:relative; display:flex; align-items:center; justify-content:center; min-height:420px;}
+  .guide-card{
+    position:relative; width:270px; aspect-ratio:3/4.1;
+    background:linear-gradient(160deg,#3B2A18,#1E140C 65%);
+    border-radius:14px; box-shadow:var(--shadow);
+    display:flex; align-items:center; justify-content:center; text-align:center; padding:34px;
+    border:1px solid rgba(180,135,44,0.5);
+    z-index:2;
+  }
+  .guide-card::before{
+    content:''; position:absolute; inset:12px; border:1px solid rgba(232,213,168,0.35); border-radius:8px;
+  }
+  .guide-card .gc-label{font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold-light); margin-bottom:14px;}
+  .guide-card h3{color:#FBF3E2; font-size:22px; line-height:1.35; font-weight:600;}
+  .guide-card .gc-sub{margin-top:16px; font-family:'Playfair Display'; font-style:italic; color:var(--gold-light); font-size:13px;}
+  .guide-card .gc-mark{position:absolute; bottom:20px; left:0; right:0; text-align:center; font-size:11px; letter-spacing:0.15em; color:rgba(255,255,255,0.45);}
+
+  section{position:relative; padding:96px 0;}
+  .section-alt{background:var(--paper);}
+  .kicker{
+    text-align:center; font-size:13px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--gold-deep); font-weight:500; margin-bottom:16px;
+  }
+  .section-title{text-align:center; font-size:clamp(28px,3.2vw,38px); font-weight:600; max-width:720px; margin:0 auto;}
+  .section-sub{text-align:center; font-size:17px; color:var(--body); max-width:600px; margin:18px auto 0;}
+
+  .intro{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;}
+  .intro-list{list-style:none; margin:28px 0 0; padding:0; display:flex; flex-direction:column; gap:16px;}
+  .intro-list li{display:flex; gap:14px; align-items:flex-start; font-size:16px; color:var(--body);}
+  .intro-list .ico{flex:none; width:20px; height:20px; color:var(--gold); margin-top:3px;}
+  .intro-panel{
+    background:var(--blush); border:1px solid var(--line); border-radius:18px; padding:40px;
+  }
+  .intro-panel h3{font-size:22px; margin-bottom:14px;}
+  .intro-panel p{color:var(--body); font-size:15.5px;}
+
+  .keys-grid{
+    display:grid; grid-template-columns:repeat(2, 1fr); gap:0;
+    margin-top:56px; border-top:1px solid var(--line);
+  }
+  .key{
+    display:flex; gap:18px; padding:30px 26px; border-bottom:1px solid var(--line);
+  }
+  .key:nth-child(odd){border-right:1px solid var(--line);}
+  .key-ring{
+    flex:none; width:48px; height:48px; border-radius:50%;
+    border:1px solid var(--gold-light); background:var(--paper);
+    display:flex; align-items:center; justify-content:center;
+    color:var(--gold-deep);
+  }
+  .key-ring svg{width:22px; height:22px;}
+  .key h4{font-family:'Jost',sans-serif; font-weight:600; font-size:17px; color:var(--ink); margin-bottom:6px;}
+  .key p{font-size:14.5px; color:var(--body-soft);}
+
+  .bonus{
+    margin-top:56px; border:1px solid var(--gold-light); background:linear-gradient(180deg, var(--blush), var(--cream));
+    border-radius:18px; padding:44px; text-align:center;
+  }
+  .bonus-ico{width:52px; height:52px; margin:0 auto 18px; color:var(--gold-deep);}
+  .bonus h3{font-size:22px; margin-bottom:10px;}
+  .bonus p{color:var(--body); max-width:460px; margin:0 auto; font-size:15.5px;}
+
+  .transform-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:36px; margin-top:56px;}
+  .transform-card{padding:8px;}
+  .transform-num{
+    width:40px; height:40px; border-radius:50%; border:1px solid var(--gold);
+    display:flex; align-items:center; justify-content:center; margin-bottom:20px;
+    font-family:'Playfair Display'; font-style:italic; color:var(--gold-deep); font-size:16px;
+  }
+  .transform-card h4{font-size:19px; margin-bottom:10px;}
+  .transform-card p{font-size:15px; color:var(--body-soft);}
+
+  .story{
+    display:grid; grid-template-columns:0.7fr 1.3fr; gap:56px; align-items:center;
+  }
+  .story-portrait{
+    aspect-ratio:4/5; border-radius:16px; background:linear-gradient(150deg,#EFE3C8,#D9C89A);
+    display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;
+    border:1px solid var(--gold-light);
+  }
+  .story-portrait .initials{font-family:'Playfair Display'; font-size:64px; color:var(--gold-deep); font-weight:600; opacity:0.55;}
+  .story-portrait .imgnote{
+    position:absolute; bottom:0; left:0; right:0; background:rgba(43,29,18,0.72); color:#fff;
+    font-size:11px; padding:8px 12px; text-align:center; letter-spacing:0.02em;
+  }
+  .quote-mark{font-family:'Playfair Display'; font-size:64px; color:var(--gold-light); line-height:0.5; margin-bottom:6px; display:block;}
+  .story blockquote{margin:0; font-size:18px; color:var(--body); font-style:normal;}
+  .story blockquote strong{color:var(--ink); font-weight:600;}
+  .story .signature{margin-top:22px; font-family:'Playfair Display'; font-style:italic; color:var(--gold-deep); font-size:16px;}
+
+  .final{
+    background:linear-gradient(180deg,#2B1D12,#1C130C); color:#F3ECDD; border-radius:28px;
+    padding:72px 56px; text-align:center; position:relative; overflow:hidden;
+  }
+  .final .kicker{color:var(--gold-light);}
+  .final h2{color:#FBF3E2;}
+  .final .section-sub{color:#D8C9AC;}
+  .form-card{
+    max-width:480px; margin:44px auto 0; background:rgba(255,255,255,0.04);
+    border:1px solid rgba(232,213,168,0.35); border-radius:18px; padding:36px; text-align:left;
+    backdrop-filter:blur(4px);
+  }
+  .field{margin-bottom:18px;}
+  .field label{display:block; font-size:13px; letter-spacing:0.04em; color:var(--gold-light); margin-bottom:8px;}
+  .field input[type=text], .field input[type=email]{
+    width:100%; padding:14px 16px; border-radius:10px; border:1px solid rgba(232,213,168,0.4);
+    background:rgba(255,255,255,0.06); color:#fff; font-family:'Jost',sans-serif; font-size:15px;
+  }
+  .field input::placeholder{color:rgba(255,255,255,0.4);}
+  .consent{display:flex; align-items:flex-start; gap:10px; font-size:13px; color:#D8C9AC; margin-bottom:22px;}
+  .consent input{margin-top:3px;}
+  .form-submit{width:100%; background:var(--gold); border-color:var(--gold); color:#1C130C; font-weight:600;}
+  .form-submit:hover{background:#fff; border-color:#fff;}
+  .form-note{display:flex; align-items:center; justify-content:center; gap:8px; margin-top:16px; font-size:12.5px; color:#B9A987;}
+  .form-msg{display:none; margin-top:16px; font-size:14px; padding:12px 16px; border-radius:10px;}
+  .form-msg.success{display:block; background:rgba(180,135,44,0.2); color:#F3E4BE; border:1px solid var(--gold);}
+  .form-msg.error{display:block; background:rgba(200,80,60,0.15); color:#F3C8BE; border:1px solid #C8503C;}
+
+  footer{padding:40px 0; border-top:1px solid var(--line); text-align:center;}
+  footer .foot-links{margin-top:12px; display:flex; gap:22px; justify-content:center; flex-wrap:wrap;}
+  footer a{font-size:13px; color:var(--body-soft); text-decoration:none;}
+  footer a:hover{color:var(--gold-deep);}
+  footer .copy{font-size:13px; color:var(--body-soft);}
+
+  @media (max-width: 860px){
+    .hero-grid{grid-template-columns:1fr; gap:48px;}
+    .hero-visual{order:-1; min-height:320px;}
+    .intro{grid-template-columns:1fr;}
+    .keys-grid{grid-template-columns:1fr;}
+    .key:nth-child(odd){border-right:none;}
+    .transform-grid{grid-template-columns:1fr; gap:32px;}
+    .story{grid-template-columns:1fr;}
+    .story-portrait{max-width:260px; margin:0 auto;}
+    .final{padding:52px 24px; border-radius:20px;}
+    .form-card{padding:26px;}
+    section{padding:72px 0;}
+    .nav-cta{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Lifestyle <em>by Sabrina</em></div>
+    <a href="#guide" class="nav-cta">Recevoir le guide</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="rings" aria-hidden="true">
+    <svg width="640" height="640" viewBox="0 0 640 640" style="right:-160px; top:-140px; opacity:0.5;">
+      <circle cx="320" cy="320" r="300" fill="none" stroke="#B4872C" stroke-width="1"/>
+      <circle cx="320" cy="320" r="230" fill="none" stroke="#B4872C" stroke-width="1"/>
+    </svg>
+  </div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Guide gratuit</span>
+      <h1>Tu mérites une vie qui te fait <span class="accent">vibrer</span></h1>
+      <p class="hero-sub">11 clés simples et concrètes pour remettre la joie et le plaisir au cœur de ton quotidien — sans culpabiliser, à ton rythme.</p>
+      <div class="hero-actions">
+        <a href="#guide" class="btn">Télécharger le guide gratuit</a>
+      </div>
+      <p class="microtrust" style="margin-top:18px;">Déjà rejoint par des centaines de femmes.</p>
+    </div>
+    <div class="hero-visual">
+      <svg width="420" height="420" viewBox="0 0 420 420" style="position:absolute;" aria-hidden="true">
+        <circle cx="210" cy="210" r="200" fill="none" stroke="#B4872C" stroke-width="1"/>
+        <circle cx="210" cy="210" r="160" fill="none" stroke="#B4872C" stroke-width="1" opacity="0.6"/>
+      </svg>
+      <div class="guide-card">
+        <div>
+          <div class="gc-label">Le guide par excellence</div>
+          <h3>11 Clés pour<br>ramener la joie<br>et le plaisir dans<br>ton quotidien</h3>
+          <div class="gc-sub">— Sabrina, Coach Lifestyle —</div>
+        </div>
+        <div class="gc-mark">LIFESTYLE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap intro reveal">
+    <div>
+      <span class="eyebrow" style="justify-content:flex-start;">Ton guide gratuit</span>
+      <h2 class="section-title" style="text-align:left; margin:0;">Te reconnecter à ce qui te fait vibrer</h2>
+      <ul class="intro-list">
+        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12l5 5L20 7"/></svg> Des clés de compréhension pour saisir pourquoi la joie est essentielle</li>
+        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12l5 5L20 7"/></svg> 11 pratiques simples à intégrer dans ton quotidien</li>
+        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12l5 5L20 7"/></svg> Des questions d'introspection et des défis d'action</li>
+        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12l5 5L20 7"/></svg> Un carnet de bord à imprimer pour suivre tes progrès</li>
+      </ul>
+      <div class="hero-actions" style="margin-top:30px;">
+        <a href="#guide" class="btn">Télécharger le guide gratuit</a>
+      </div>
+    </div>
+    <div class="intro-panel">
+      <h3>Pourquoi ce guide ?</h3>
+      <p>On attend souvent un événement extraordinaire pour se sentir vivante. Pourtant, la joie se cultive au quotidien, dans des gestes simples et accessibles. Ce guide t'accompagne pas à pas, sans injonction ni culpabilité, pour remettre du plaisir dans chaque journée — telle qu'elle est, dès aujourd'hui.</p>
+    </div>
+  </div>
+</section>
+
+<section id="keys">
+  <div class="wrap">
+    <p class="kicker">Ce que tu vas découvrir</p>
+    <h2 class="section-title">11 clés pratiques pour transformer ton quotidien</h2>
+    <p class="section-sub">Chaque clé t'invite à l'introspection ou au passage à l'action, pour reconnecter avec ce qui compte vraiment : la joie et le plaisir.</p>
+
+    <div class="keys-grid reveal">
+      <div class="key">
+        <div class="key-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+        <div><h4>Créer des rituels matinaux joyeux</h4><p>Une routine qui met de bonne humeur dès le réveil.</p></div>
+      </div>
+      <div class="key">
+        <div class="key-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+        <div><h4>Pratiquer la gratitude</h4><p>Identifier chaque jour trois choses qui t'ont apporté de la joie.</p></div>
+      </div>
+      <div class="key">
+        <div class="key-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l1.6 5.2L19 9l-5.4 1.8L12 16l-1.6-5.2L5 9l5.4-1.8L12 2z"/></svg></div>
+        <div><h4>Se reconnecter à ses passions</h4><p>Faire une activité qui te fait vibrer, même 10 minutes par jour.</p></div>
+      </div>
+      <div class="key">
+        <div class="key-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.3 3.1-6 7-6s7 2.7 7 6"/><circle cx="18" cy="9" r="2.4"/><path d="M15.5 14.2c2.7.4 5 2.4 5 5.3"/></svg></div>
+        <div><h4>S'entourer de positif</h4><p>Choisir des personnes, contenus ou environnements qui élèvent ton énergie.</p></div>
+      </div>
+      <div class="key">
+        <div class="key-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l7 3v6c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div><h4>Apprendre à dire non</h4><p>Se libérer des obligations qui ne te nourrissent pas.</p></div>
+      </div>
+      <div class="key">
+        <div class="key-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9V7a3 3 0 0 1 6 0v2M4 9h10v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9z"/><path d="M17 9c1.7 0 3 1.3 3 3s-1.3 3-3 3"/></svg></div>
+        <div><h4>Créer des moments de plaisir simple</h4><p>Une balade, un bon repas, un fou rire… savoure l'instant.</p></div>
+      </div>
+      <div class="key">
+        <div class="key-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M4 19l16-13"/></svg></div>
+        <div><h4>Déconnecter pour mieux se reconnecter</h4><p>Limiter les écrans pour profiter pleinement du moment présent.</p></div>
+      </div>
+      <div class="key">
+        <div class="key-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h10M4 18h13"/></svg></div>
+        <div><h4>Exprimer l'amour au quotidien</h4><p>Par des mots, des gestes ou des attentions sincères.</p></div>
+      </div>
+      <div class="key">
+        <div class="key-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg></div>
+        <div><h4>S'autoriser à ralentir</h4><p>Prendre le temps de savourer, sans culpabilité.</p></div>
+      </div>
+      <div class="key">
+        <div class="key-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 21h8M12 17v4M6 4h12v3a6 6 0 0 1-12 0V4z"/><path d="M6 6H3a3 3 0 0 0 3 5M18 6h3a3 3 0 0 1-3 5"/></svg></div>
+        <div><h4>Célébrer les petites victoires</h4><p>Reconnaître et apprécier chaque pas en avant.</p></div>
+      </div>
+      <div class="key">
+        <div class="key-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.9 6 6.6.6-5 4.4 1.5 6.5L12 16.8 6 19.5l1.5-6.5-5-4.4 6.6-.6L12 2z"/></svg></div>
+        <div><h4>Célébrer ses actions avec fierté</h4><p>Reconnaître que tu avances, même si ce n'est pas parfait.</p></div>
+      </div>
+    </div>
+
+    <div class="bonus reveal">
+      <svg class="bonus-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="8" width="16" height="12" rx="1.5"/><path d="M4 8l2-4h12l2 4M12 8v12M4.5 8h15"/></svg>
+      <h3>Bonus : carnet de bord à imprimer</h3>
+      <p>En complément du guide, reçois un carnet de bord spécialement conçu pour t'accompagner dans ta transformation, jour après jour.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <p class="kicker">Ce qui va changer</p>
+    <h2 class="section-title">Ce qui va changer dans ta vie</h2>
+    <p class="section-sub">En appliquant ces 11 clés, tu vas progressivement te reconnecter à toi-même, retrouver ta légèreté et créer une vie qui te ressemble vraiment.</p>
+
+    <div class="transform-grid reveal">
+      <div class="transform-card">
+        <div class="transform-num">1</div>
+        <h4>Retrouve la joie au quotidien</h4>
+        <p>Reconnecte-toi aux petits plaisirs simples et aux moments qui illuminent ta vie, sans attendre des événements extraordinaires.</p>
+      </div>
+      <div class="transform-card">
+        <div class="transform-num">2</div>
+        <h4>Libère-toi de la culpabilité</h4>
+        <p>Apprends à te choisir et à t'autoriser à vivre selon tes désirs, sans te sentir égoïste ou coupable de prendre soin de toi.</p>
+      </div>
+      <div class="transform-card">
+        <div class="transform-num">3</div>
+        <h4>Retrouve ta légèreté</h4>
+        <p>Allège le poids des devoirs et responsabilités qui t'étouffent. Respire à nouveau et sens-toi libre de vivre pleinement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap story reveal">
+    <div class="story-portrait">
+      <span class="initials">S.</span>
+      <div class="imgnote">Remplace ce bloc par ta photo</div>
+    </div>
+    <div>
+      <span class="quote-mark">"</span>
+      <blockquote>
+        Salut, moi c'est Sabrina. Pendant plus de 30 ans, j'ai répondu aux attentes des autres et de la société. Cela m'a conduit à un épuisement professionnel, familial, à la solitude et au rejet.
+        <br><br>
+        <strong>J'ai dû affronter mon histoire, casser mes croyances et sortir de mes conditionnements. Et surtout, j'ai dû apprendre à me donner le droit.</strong>
+        <br><br>
+        Aujourd'hui, j'accompagne les femmes qui, comme moi, se sont oubliées. Je leur donne l'opportunité de remettre la joie et le plaisir au cœur de leur vie, de se choisir sans culpabiliser.
+      </blockquote>
+      <p class="signature">— Sabrina, Coach Lifestyle</p>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <div class="final reveal">
+      <p class="kicker">Prête à ramener la joie dans ta vie ?</p>
+      <h2 class="section-title">Télécharge ton guide gratuit</h2>
+      <p class="section-sub">Reçois immédiatement tes 11 clés pour transformer ton quotidien. Entre ton prénom et ton adresse email pour commencer dès aujourd'hui.</p>
+
+      <div class="form-card">
+        <!--
+          ÉTAPE À FAIRE : crée un compte gratuit sur https://formspree.io,
+          crée un formulaire, puis remplace YOUR_FORM_ID ci-dessous par
+          l'identifiant fourni (ex: https://formspree.io/f/abcdwxyz).
+          Voir le README.md fourni pour le détail des étapes.
+        -->
+        <form id="guideForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="field">
+            <label for="prenom">Ton prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Ton prénom" autocomplete="given-name">
+          </div>
+          <div class="field">
+            <label for="email">Ton adresse email *</label>
+            <input type="email" id="email" name="email" placeholder="Ton adresse email" required autocomplete="email">
+          </div>
+          <label class="consent">
+            <input type="checkbox" name="consentement" required>
+            <span>J'accepte de recevoir le guide gratuit et d'être recontactée concernant le Programme Lifestyle et les contenus inspirants de Sabrina. *</span>
+          </label>
+          <button type="submit" class="btn form-submit">Recevoir le guide gratuit maintenant</button>
+          <div id="formMsg" class="form-msg" role="status"></div>
+        </form>
+        <p class="form-note">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          Tes informations sont 100% sécurisées et ne seront jamais partagées.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="copy">© 2026 Lifestyle by Sabrina. Tous droits réservés.</p>
+    <div class="foot-links">
+      <a href="#">Mentions légales</a>
+      <a href="#">Politique de confidentialité</a>
+      <a href="#">CGV</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  const form = document.getElementById('guideForm');
+  const msg = document.getElementById('formMsg');
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    msg.className = 'form-msg';
+    msg.textContent = '';
+    const data = new FormData(form);
+    try{
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if(res.ok){
+        form.reset();
+        msg.textContent = "Merci ! Vérifie ta boîte mail (et tes spams) pour recevoir ton guide.";
+        msg.classList.add('success');
+      } else {
+        msg.textContent = "Une erreur est survenue. Réessaie, ou écris-nous directement par email.";
+        msg.classList.add('error');
+      }
+    } catch(err){
+      msg.textContent = "Une erreur est survenue. Réessaie, ou écris-nous directement par email.";
+      msg.classList.add('error');
+    }
+  });
+</script>
+
+</body>
+</html>
