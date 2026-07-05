@@ -483,9 +483,7 @@
         headers: { 'Accept': 'application/json' }
       });
       if(res.ok){
-        form.reset();
-        msg.textContent = "Merci ! Vérifie ta boîte mail (et tes spams) pour recevoir ton guide.";
-        msg.classList.add('success');
+        window.location.href = "merci.html";
       } else {
         msg.textContent = "Une erreur est survenue. Réessaie, ou écris-nous directement par email.";
         msg.classList.add('error');
